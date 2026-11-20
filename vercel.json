@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "codequest-app",
+  "builds": [
+    { "src": "public/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/public/index.html" }
+  ]
+}
